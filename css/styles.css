@@ -1,0 +1,419 @@
+/* COLORES */
+
+/* Naranja: F55139 */
+/* Azul: 0F222D */
+/* Blanco: EBE7D9 */
+
+
+
+html,
+body {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    background-color: #0F222D;
+    color: #EBE7D9;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 134.4px;
+
+}
+
+
+h1 {
+    font-size: 6.5rem;
+    max-width: 43%;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+span {
+    color: #F55139;
+}
+
+hr {
+    margin: 4rem auto;
+    height: .2rem;
+    background-color: #F55139;
+    max-width: 75%;
+    border: none;
+}
+
+
+.cabecera {
+    /* margin: 134.4px auto 0 auto; */
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    background-image: url(../img/Fondo-Header.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 16rem;
+    max-height: 100%;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.aling-item-center {
+    align-items: center;
+}
+
+.cabecera h3 {
+    font-size: 3.5rem;
+    max-width: 43%;
+}
+
+
+.navbar {
+    z-index: 10;
+    background-color: #0F222D;
+    padding: 1rem 0;
+    border-bottom: #F55139 .4rem solid;
+}
+
+
+.oculta {
+    visibility: hidden;
+}
+
+.fija {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar img {
+    height: 8rem;
+    width: 24rem;
+    margin: 0 auto;
+    display: block;
+}
+
+nav {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.navbar nav ul {
+    padding: 0;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.justificarAR {
+    display: flex;
+    justify-content: space-around;
+}
+
+.justificarBE {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.navbar nav ul li {
+    font-size: 2rem;
+    list-style: none;
+    display: inline-block;
+    margin: 0 .5rem;
+
+}
+
+.navbar nav ul li a {
+    padding: 0 .5rem;
+    transition: all .4s ease;
+
+}
+
+.navbar nav ul li a:hover {
+    border-bottom: .5rem solid #F55139;
+    border-left: .3rem solid #F55139;
+    border-right: .3rem solid #F55139;
+    color: #F55139;
+    transition: all .4s ease;
+}
+
+.queEs hr {
+    margin-left: 1rem;
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+ol li {
+    font-size: 2rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EBE7D9;
+
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+section img {
+    display: inline;
+}
+
+h4 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.requisitos h2,
+.requisitos li,
+.requisitos h4 {
+    text-align: end;
+}
+
+.requisitos hr {
+    margin-right: 1rem;
+}
+
+.requisitos div {
+    margin: 0 1rem;
+
+}
+
+.requisito {
+    margin: 1rem;
+    text-align: center;
+}
+
+footer img {
+    height: 11rem;
+    width: 33rem;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #0F222D;
+    border-top: #F55139 .4rem solid;
+    margin-top: 2rem;
+}
+
+
+footer h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+
+footer i:hover {
+    color: #F55139;
+    transition: all .4s ease;
+}
+
+i {
+    margin: 1rem;
+    font-size: 5rem;
+}
+
+.tutoriales hr {
+    max-width: 40%;
+}
+
+.imgRegistro {
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    height: 75vh;
+}
+
+
+.queEs img {
+    margin: 2rem;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(../img/parallax.jpg);
+
+    /* Set a specific height */
+    min-height: 90vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ancla:before {
+    display: block;
+    content: " ";
+    margin-top: -134.4px;
+    height: 134.4px;
+    visibility: hidden;
+}
+
+                                                /* *********** */
+                                                /* *********** */
+                                                /* *********** */
+                                                /*   GRILLAS   */
+                                                /* *********** */
+                                                /* *********** */
+                                                /* *********** */
+
+.footerGrid{
+    grid-area: footer;
+}
+.requisitosGrid{
+    grid-area: req;
+
+}
+.parallaxGrid{
+    grid-area: par;
+
+}
+.queEsGrid{
+    grid-area: queEs;
+
+}
+.headerGrid{
+    grid-area: header;
+
+}
+
+.bodyIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:   
+   
+    "header"
+    "queEs"
+    "par"  
+    "req"
+    "footer";
+}
+
+.headerRegistro{
+    grid-area: headReg;
+}
+.form1{
+    grid-area: form1;
+}
+
+.form2{
+    grid-area: form2;
+}
+.footerRegistro{
+    grid-area: footReg;
+}
+
+.bodyRegistro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-template-areas:   
+   
+    "headReg headReg"
+    "form1 form2"
+    "footReg footReg"
+    ;
+}
+
+.form1 img, .form2 img{
+    display: block;
+    margin: 0 auto;
+}
+
+                                                /* *********** */
+                                                /* *********** */
+                                                /* *********** */
+                                                /*  RESPONSIVE */
+                                                /* *********** */
+                                                /* *********** */
+                                                /* *********** */
+
+@media screen and (max-width: 768px){
+    .justificarAR {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }    
+
+    .justificarBE {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .queEs hr {
+        margin: 0 auto;
+    }
+    
+    hr {
+        margin: 4rem auto;
+        height: .2rem;
+        background-color: #F55139;
+        max-width: 75%;
+        border: none;
+    }
+
+    .ancla:before {
+        display: block;
+        content: " ";
+        margin-top: -286.4px;
+        height: 286.4px;
+        visibility: hidden;
+    }
+
+    form{
+        padding-top: 17rem;
+    }
+
+    .bodyRegistro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, .5fr, .5fr, 1fr;
+        grid-template-areas:   
+       
+        "headReg"
+        "form1"
+        "form2"
+        "footReg"
+        ;
+    }
+    
+}
+
