@@ -48,7 +48,7 @@ span {
     color: #F55139;
 }
 
-hr {
+.hr {
     margin: 4rem auto;
     height: .2rem;
     background-color: #F55139;
@@ -66,7 +66,7 @@ hr {
     background-size: cover;
     padding: 4rem 16rem;
     max-height: 100%;
-    height: 75vh;
+    height: 85vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@ hr {
 }
 
 
-.navbar {
+.navbarr {
     z-index: 10;
     background-color: #0F222D;
     padding: 1rem 0;
@@ -100,7 +100,7 @@ hr {
     width: 100%;
 }
 
-.navbar img {
+.navbarr img {
     height: 8rem;
     width: 24rem;
     margin: 0 auto;
@@ -112,7 +112,7 @@ nav {
     margin: 0 auto;
 }
 
-.navbar nav ul {
+.navbarr nav ul {
     padding: 0;
     max-width: 85%;
     margin: 0 auto;
@@ -130,7 +130,7 @@ nav {
 
 
 
-.navbar nav ul li {
+.navbarr nav ul li {
     font-size: 2rem;
     list-style: none;
     display: inline-block;
@@ -138,13 +138,13 @@ nav {
 
 }
 
-.navbar nav ul li a {
+.navbarr nav ul li a {
     padding: 0 .5rem;
     transition: all .4s ease;
 
 }
 
-.navbar nav ul li a:hover {
+.navbarr nav ul li a:hover {
     border-bottom: .5rem solid #F55139;
     border-left: .3rem solid #F55139;
     border-right: .3rem solid #F55139;
@@ -188,6 +188,13 @@ p {
     font-size: 1.8rem;
 }
 
+.imgResponsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .requisitos h2,
 .requisitos li,
 .requisitos h4 {
@@ -204,7 +211,7 @@ p {
 }
 
 .requisito {
-    margin: 1rem;
+    margin: 1rem 0;
     text-align: center;
 }
 
@@ -284,6 +291,11 @@ form {
     visibility: hidden;
 }
 
+iframe {
+    max-width: 100%;
+    height: 75%;
+}
+
                                                 /* *********** */
                                                 /* *********** */
                                                 /* *********** */
@@ -335,6 +347,11 @@ form {
 .form2{
     grid-area: form2;
 }
+
+.acordeon{
+    grid-area: acor;
+}
+
 .footerRegistro{
     grid-area: footReg;
 }
@@ -342,13 +359,22 @@ form {
 .bodyRegistro{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-template-rows: 1fr, 2fr, 1fr, 1fr;
     grid-template-areas:   
    
     "headReg headReg"
     "form1 form2"
+    "acor acor"
     "footReg footReg"
     ;
+}
+
+.font-size2rem{
+    font-size: 2rem;
+}
+
+.font-size1rem{
+    font-size: 2rem;
 }
 
 .form1 img, .form2 img{
@@ -411,6 +437,7 @@ form {
         "headReg"
         "form1"
         "form2"
+        "acor"
         "footReg"
         ;
     }
