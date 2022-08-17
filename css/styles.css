@@ -6,6 +6,15 @@
 
 
 
+/* SELECTORES DEFECTO */
+/* SELECTORES DEFECTO */
+/* SELECTORES DEFECTO */
+/* SELECTORES DEFECTO */
+/* SELECTORES DEFECTO */
+/* SELECTORES DEFECTO */
+/* SELECTORES DEFECTO */
+/* SELECTORES DEFECTO */
+
 html,
 body {
     font-size: 62.5%;
@@ -44,11 +53,43 @@ h1 {
     padding-top: 3rem;
 }
 
+h2 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+ol li {
+    font-size: 2rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EBE7D9;
+
+}
+
+
+section img {
+    display: inline;
+}
+
+
+
+p {
+    font-size: 1.8rem;
+}
+
 span {
     color: #F55139;
 }
 
-.hr {
+hr {
     margin: 4rem auto;
     height: .2rem;
     background-color: #F55139;
@@ -56,6 +97,65 @@ span {
     border: none;
 }
 
+i {
+    margin: 1rem;
+    font-size: 5rem;
+}
+
+form {
+    height: 75vh;
+}
+
+
+/* ESTILOS INDIVIDUALES */
+/* ESTILOS INDIVIDUALES */
+/* ESTILOS INDIVIDUALES */
+/* ESTILOS INDIVIDUALES */
+/* ESTILOS INDIVIDUALES */
+/* ESTILOS INDIVIDUALES */
+/* ESTILOS INDIVIDUALES */
+
+.aling-item-center {
+    align-items: center;
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+.oculta {
+    visibility: hidden;
+}
+
+.fija {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.justificarAR {
+    display: flex;
+    justify-content: space-around;
+}
+
+.justificarBE {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgResponsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* CABECERA */
+/* CABECERA */
+/* CABECERA */
+/* CABECERA */
+/* CABECERA */
 
 .cabecera {
     /* margin: 134.4px auto 0 auto; */
@@ -72,9 +172,6 @@ span {
     align-items: center;
 }
 
-.aling-item-center {
-    align-items: center;
-}
 
 .cabecera h3 {
     font-size: 3.5rem;
@@ -82,22 +179,23 @@ span {
 }
 
 
+/* BARRA NAVEGACIÓN */
+/* BARRA NAVEGACIÓN */
+/* BARRA NAVEGACIÓN */
+/* BARRA NAVEGACIÓN */
+/* BARRA NAVEGACIÓN */
+/* BARRA NAVEGACIÓN */
+
+nav {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .navbarr {
     z-index: 10;
     background-color: #0F222D;
     padding: 1rem 0;
     border-bottom: #F55139 .4rem solid;
-}
-
-
-.oculta {
-    visibility: hidden;
-}
-
-.fija {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 .navbarr img {
@@ -107,28 +205,11 @@ span {
     display: block;
 }
 
-nav {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
 .navbarr nav ul {
     padding: 0;
     max-width: 85%;
     margin: 0 auto;
 }
-
-.justificarAR {
-    display: flex;
-    justify-content: space-around;
-}
-
-.justificarBE {
-    display: flex;
-    justify-content: space-around;
-}
-
-
 
 .navbarr nav ul li {
     font-size: 2rem;
@@ -152,47 +233,30 @@ nav {
     transition: all .4s ease;
 }
 
+
+
+
+
+
+
+
+
+/* REQUISITOS */
+/* REQUISITOS */
+/* REQUISITOS */
+/* REQUISITOS */
+/* REQUISITOS */
+/* REQUISITOS */
+/* REQUISITOS */
+/* REQUISITOS */
+
+.queEs img {
+    margin: 2rem;
+}
+
+
 .queEs hr {
     margin-left: 1rem;
-}
-
-.textoCentrado {
-    text-align: center;
-}
-
-ol li {
-    font-size: 2rem;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #EBE7D9;
-
-}
-
-h2 {
-    font-size: 5rem;
-}
-
-section img {
-    display: inline;
-}
-
-h4 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-p {
-    font-size: 1.8rem;
-}
-
-.imgResponsive{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 .requisitos h2,
@@ -215,12 +279,17 @@ p {
     text-align: center;
 }
 
-footer img {
-    height: 11rem;
-    width: 33rem;
-    margin: 0 auto;
-    display: block;
+.tutoriales hr {
+    max-width: 40%;
 }
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
 
 footer {
     max-width: 100%;
@@ -229,6 +298,15 @@ footer {
     border-top: #F55139 .4rem solid;
     margin-top: 2rem;
 }
+
+footer img {
+    height: 11rem;
+    width: 33rem;
+    margin: 0 auto;
+    display: block;
+}
+
+
 
 
 footer h3 {
@@ -246,28 +324,30 @@ footer i:hover {
     transition: all .4s ease;
 }
 
-i {
-    margin: 1rem;
-    font-size: 5rem;
-}
 
-.tutoriales hr {
-    max-width: 40%;
-}
+
+
 
 .imgRegistro {
     display: block;
     margin: 0 auto;
 }
 
-form {
-    height: 75vh;
-}
 
 
-.queEs img {
-    margin: 2rem;
-}
+
+
+/* OTROS AGREGADOS */
+/* OTROS AGREGADOS */
+/* OTROS AGREGADOS */
+/* OTROS AGREGADOS */
+/* OTROS AGREGADOS */
+/* OTROS AGREGADOS */
+/* OTROS AGREGADOS */
+/* OTROS AGREGADOS */
+/* OTROS AGREGADOS */
+
+
 
 .parallax {
     /* The image used */

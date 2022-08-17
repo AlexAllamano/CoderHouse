@@ -1,0 +1,85 @@
+
+
+html, body{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    background-color: $colorAzul;
+    color: $colorBlanco;
+    font-family: $tipografiaGeneral;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding-top: 134.4px;
+}
+
+main{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h1, h2, h4{
+    font-family: $tipografiaTitulos;
+}
+
+h1{
+    font-size: 6.5rem;
+    max-width: 43%;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h4{
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+ol li {
+    font-size: 2rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $colorBlanco;
+
+}
+
+span {
+    color: $colorNaranja;
+}
+
+
+hr {
+    margin: 4rem auto;
+    height: .2rem;
+    background-color: $colorNaranja;
+    max-width: 75%;
+    border: none;
+}
+
+i {
+    margin: 1rem;
+    font-size: 5rem;
+}
+
+form {
+    height: 75vh;
+}
+
+
+section img {
+    display: inline;
+}

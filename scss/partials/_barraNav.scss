@@ -1,0 +1,47 @@
+nav {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.navbarr {
+    z-index: 10;
+    background-color: $colorAzul;
+    padding: 1rem 0;
+    border-bottom: $colorNaranja .4rem solid;
+
+    img {
+        height: 8rem;
+        width: 24rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    nav {
+        ul {
+            padding: 0;
+            max-width: 85%;
+            margin: 0 auto;
+
+            li {
+                font-size: 2rem;
+                list-style: none;
+                display: inline-block;
+                margin: 0 .5rem;
+
+                a {
+                    padding: 0 .5rem;
+                    transition: all .4s ease;
+
+                    &:hover {
+                        border-bottom: .5rem solid $colorNaranja;
+                        border-left: .3rem solid $colorNaranja;
+                        border-right: .3rem solid $colorNaranja;
+                        color: $colorNaranja;
+                        transition: all .4s ease;
+                    }
+                }
+
+            }
+        }
+    }
+}

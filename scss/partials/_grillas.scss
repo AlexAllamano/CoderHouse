@@ -1,0 +1,77 @@
+.footerGrid{
+    grid-area: footer;
+}
+.requisitosGrid{
+    grid-area: req;
+
+}
+.parallaxGrid{
+    grid-area: par;
+
+}
+.queEsGrid{
+    grid-area: queEs;
+
+}
+.headerGrid{
+    grid-area: header;
+
+}
+
+.bodyIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:   
+   
+    "header"
+    "queEs"
+    "par"  
+    "req"
+    "footer";
+}
+
+.headerRegistro{
+    grid-area: headReg;
+}
+.form1{
+    grid-area: form1;
+}
+
+.form2{
+    grid-area: form2;
+}
+
+.acordeon{
+    grid-area: acor;
+}
+
+.footerRegistro{
+    grid-area: footReg;
+}
+
+.bodyRegistro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr, 2fr, 1fr, 1fr;
+    grid-template-areas:   
+   
+    "headReg headReg"
+    "form1 form2"
+    "acor acor"
+    "footReg footReg"
+    ;
+}
+
+.font-size2rem{
+    font-size: 2rem;
+}
+
+.font-size1rem{
+    font-size: 2rem;
+}
+
+.form1 img, .form2 img{
+    display: block;
+    margin: 0 auto;
+}

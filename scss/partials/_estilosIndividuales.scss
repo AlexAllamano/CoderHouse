@@ -1,0 +1,34 @@
+.aling-item-center {
+    align-items: center;
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+.oculta {
+    visibility: hidden;
+}
+
+.fija {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.justificarAR {
+    display: flex;
+    justify-content: space-around;
+}
+
+.justificarBE {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgResponsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

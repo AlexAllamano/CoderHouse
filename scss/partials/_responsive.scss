@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px){
+    .justificarAR {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }    
+
+    .justificarBE {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .queEs {hr{
+        margin: 0 auto;
+    }
+        
+    }
+    
+    hr {
+        margin: 4rem auto;
+        height: .2rem;
+        background-color: $colorNaranja;
+        max-width: 75%;
+        border: none;
+    }
+
+    .ancla:before {
+        display: block;
+        content: " ";
+        margin-top: -286.4px;
+        height: 286.4px;
+        visibility: hidden;
+    }
+
+    form{
+        padding-top: 17rem;
+    }
+
+    .bodyRegistro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, .5fr, .5fr, 1fr;
+        grid-template-areas:   
+       
+        "headReg"
+        "form1"
+        "form2"
+        "acor"
+        "footReg"
+        ;
+    }
+    
+}
