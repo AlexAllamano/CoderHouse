@@ -3,17 +3,18 @@
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     background-image: url(../img/Fondo-Header.jpg);
-    background-position: center;
+    background-position: map-get($estilosIndividuales, centrado );
     background-size: cover;
     padding: 4rem 16rem;
     max-height: 100%;
     height: 85vh;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: map-get($estilosIndividuales, centrado );
 
     h3{
-        font-size: 3.5rem;
+        @include tamanioFuente(3.5rem);
+
     max-width: 43%;
     }
 }

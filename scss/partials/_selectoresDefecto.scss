@@ -1,7 +1,6 @@
-
-
-html, body{
-    font-size: 62.5%;
+html,
+body {
+    @include tamanioFuente(62.5%);
     margin: 0;
     padding: 0;
     background-color: $colorAzul;
@@ -9,45 +8,51 @@ html, body{
     font-family: $tipografiaGeneral;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     padding-top: 134.4px;
 }
 
-main{
+main {
     max-width: 70%;
     margin: 0 auto;
 }
 
-h1, h2, h4{
+h1,
+h2,
+h4 {
     font-family: $tipografiaTitulos;
 }
 
-h1{
-    font-size: 6.5rem;
+h1 {
+    @include tamanioFuente(6.5rem);
     max-width: 43%;
     margin: 0;
     padding-top: 3rem;
 }
 
-h2{
-    font-size: 5rem;
+h2 {
+    @include tamanioFuente(5rem);
+
 }
 
-h4{
-    font-size: 3rem;
-    text-align: center;
+h4 {
+    @include tamanioFuente(3rem);
+
+    text-align: map-get($estilosIndividuales, centrado );
 }
 
 p {
-    font-size: 1.8rem;
+    @include tamanioFuente(1.8rem);
+
 }
 
 ol li {
-    font-size: 2rem;
+    @include tamanioFuente(2rem);
+
     list-style: none;
 }
 
@@ -72,7 +77,8 @@ hr {
 
 i {
     margin: 1rem;
-    font-size: 5rem;
+    @include tamanioFuente(5rem);
+
 }
 
 form {

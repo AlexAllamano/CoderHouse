@@ -59,16 +59,18 @@
     "headReg headReg"
     "form1 form2"
     "acor acor"
-    "footReg footReg"
+    "footReg footReg "
     ;
 }
 
 .font-size2rem{
-    font-size: 2rem;
+    @include tamanioFuente(2rem);
+
 }
 
 .font-size1rem{
-    font-size: 2rem;
+    @include tamanioFuente(1rem);
+
 }
 
 .form1 img, .form2 img{

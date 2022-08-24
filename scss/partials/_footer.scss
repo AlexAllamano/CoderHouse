@@ -13,12 +13,38 @@ footer {
     }
 
     h3 {
-        font-size: 2.5rem;
-        text-align: center;
+        @include tamanioFuente(2.5rem);
+
+        text-align: map-get($estilosIndividuales, centrado );
     }
 
     p {
-        font-size: 1.5rem;
+        @include tamanioFuente(1.5rem);
+
+    }
+
+    i{
+        border: solid 0.3rem $colorBlanco;
+        border-radius: 15%;
+        padding: 1rem;
+        @include tamanioFuente(5rem);
+
+    }
+
+    .icoFacebook{
+        @extend i;
+        color: #3b5998;
+    }
+
+    .iTikTok{
+        @extend i;
+        color: #ff0050;
+    }
+
+    .icoInstagram{
+        @extend i;
+        color: #795a80 ;
+
     }
 
     i:hover {

@@ -23,7 +23,8 @@ nav {
             margin: 0 auto;
 
             li {
-                font-size: 2rem;
+                @include tamanioFuente(2rem);
+
                 list-style: none;
                 display: inline-block;
                 margin: 0 .5rem;

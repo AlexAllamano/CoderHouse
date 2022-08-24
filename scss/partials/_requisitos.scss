@@ -27,7 +27,7 @@
 
 .requisito {
     margin: 1rem 0;
-    text-align: center;
+    text-align: map-get($estilosIndividuales, centrado );
 }
 .tutoriales hr {
     max-width: 40%;

@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
@@ -16,7 +17,9 @@ main {
   max-width: 70%;
   margin: 0 auto; }
 
-h1, h2, h4 {
+h1,
+h2,
+h4 {
   font-family: "Oswald", sans-serif; }
 
 h1 {
@@ -53,7 +56,7 @@ hr {
   max-width: 75%;
   border: none; }
 
-i {
+i, footer .icoFacebook, footer .iTikTok, footer .icoInstagram {
   margin: 1rem;
   font-size: 5rem; }
 
@@ -83,7 +86,7 @@ section img {
 
 .justificarBE {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .imgResponsive {
   max-width: 100%;
@@ -207,7 +210,18 @@ footer {
     text-align: center; }
   footer p {
     font-size: 1.5rem; }
-  footer i:hover {
+  footer i, footer .icoFacebook, footer .iTikTok, footer .icoInstagram {
+    border: solid 0.3rem #EBE7D9;
+    border-radius: 15%;
+    padding: 1rem;
+    font-size: 5rem; }
+  footer .icoFacebook {
+    color: #3b5998; }
+  footer .iTikTok {
+    color: #ff0050; }
+  footer .icoInstagram {
+    color: #795a80; }
+  footer i:hover, footer .icoFacebook:hover, footer .iTikTok:hover, footer .icoInstagram:hover {
     color: #F55139;
     transition: all .4s ease; }
 
@@ -251,13 +265,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr, 2fr, 1fr, 1fr;
-  grid-template-areas: "headReg headReg" "form1 form2" "acor acor" "footReg footReg"; }
+  grid-template-areas: "headReg headReg" "form1 form2" "acor acor" "footReg footReg "; }
 
 .font-size2rem {
   font-size: 2rem; }
 
 .font-size1rem {
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 .form1 img, .form2 img {
   display: block;

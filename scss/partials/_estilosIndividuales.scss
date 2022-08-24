@@ -1,14 +1,28 @@
+// .aling-item-center {
+//     align-items: center;
+// }
+
+// .textoCentrado {
+//     text-align: center;
+// }
+
+// .oculta {
+//     visibility: hidden;
+// }
+
 .aling-item-center {
-    align-items: center;
+    align-items: map-get($estilosIndividuales, centrado);
 }
 
 .textoCentrado {
-    text-align: center;
+    text-align: map-get($estilosIndividuales, centrado);
 }
 
 .oculta {
-    visibility: hidden;
+    visibility: map-get($estilosIndividuales, oculto);
 }
+
+
 
 .fija {
     position: fixed;
@@ -23,7 +37,7 @@
 
 .justificarBE {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .imgResponsive{

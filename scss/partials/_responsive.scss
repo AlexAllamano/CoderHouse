@@ -7,7 +7,7 @@
 
     .justificarBE {
         display: flex;
-        text-align: center;
+        text-align: map-get($estilosIndividuales, centrado );
         flex-direction: column;
         justify-content: space-around;
     }
