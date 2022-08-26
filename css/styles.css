@@ -151,6 +151,7 @@ form {
 }
 
 
+
 /* CABECERA */
 /* CABECERA */
 /* CABECERA */
@@ -189,6 +190,7 @@ form {
 nav {
     max-width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .navbarr {
@@ -220,8 +222,22 @@ nav {
 }
 
 .navbarr nav ul li a {
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     transition: all .4s ease;
+    color: #EBE7D9;
+}
+
+.estilosMenuHamburguesa{
+    
+    text-align: center;
+    margin: 0 auto;
+    border: solid 3px #F55139;
+    border-radius: 6px;
+}
+
+.fontSize{
+    font-size: 3rem;
+   
 
 }
 
@@ -234,7 +250,13 @@ nav {
 }
 
 
-
+.jumptarget::before {
+    display: block;
+      content: " ";
+      margin-top: -134px;
+      height: 134px;
+      visibility: hidden;
+  }
 
 
 

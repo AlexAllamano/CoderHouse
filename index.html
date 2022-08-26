@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- DESCRIPCION -->
-    <meta name="description"
-        content="Vas a poder crear, buscar, organizar y participar en torneos de 
+    <meta name="description" content="Vas a poder crear, buscar, organizar y participar en torneos de 
                 futbol, basquet, e-Sports y mucho más. Vos decidís la disciplna">
 
     <!-- KEYWORDS -->
-    <meta name="keywords"
-        content="app, aplicacion, android, ios, torneos, participar en torneos, 
+    <meta name="keywords" content="app, aplicacion, android, ios, torneos, participar en torneos, 
                 deportes, futbol, basquet, rugby, voley, hockey, lol, counter strike,
                 rocket league, dota, valorant, fortnite">
 
@@ -26,10 +24,10 @@
 
 
     <!-- ARCHIVOS DE STYLES HECHO DURANTE LA CURSADA -->
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- ARCHIVO DE ESTILOS GENERADO CON SASS -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap" rel="stylesheet">
@@ -38,26 +36,45 @@
 </head>
 
 <body class="bodyIndex">
-    <header id="inicio" class="ancla headerGrid">
+    <header id="inicio" class="jumptarget headerGrid">
         <!-- Barra de navegación -->
         <div class="navbarr fija ">
 
-            <a href="#inicio" class="col-lg-12"><img src="img/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="#inicio">
+                <img src="img/logo.png" alt="logo">
+            </a>
 
             <nav>
-                <ul class="justificarBE">
+                <nav class=" navbar-expand-md ">
+                    <button class="navbar-toggler estilosMenuHamburguesa" type="button" data-toggle="collapse"
+                        data-target="#opciones">
+                        <span class=""><i class="fa fa-bars fontSize" aria-hidden="true"></i></span>
+                    </button>
 
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#queEs">Qué es</a></li>
-
-                    <li><a href="#comoFunciona">Cómo funciona</a></li>
-                    <li><a href="#requisitos">Requisitos</a></li>
-
-
-                    <li><a href="#tutoriales">Tutoriales</a></li>
-                    <li><a href="registro.html">Registro</a></li>
-
-                </ul>
+                    <!-- enlaces -->
+                    <div class="collapse navbar-collapse " id="opciones">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#queEs">Qué es</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#comoFunciona">Cómo funciona</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#requisitos">Requisitos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tutoriales">Tutoriales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registro.html">Registro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </nav>
         </div>
 
@@ -65,8 +82,7 @@
         <div class="cabecera">
             <div data-aos="fade-right">
                 <!-- ENCABEZADO -->
-                <h1>LLEGÓ EL TEAM MANAGER <span>DEFINITIVO</span> PARA PARTICIPAR DE <span>TORNEOS</span> Y GANAR PREMIOS</h1>
-                <h3>No sabías lo mucho que lo necesitabas</h3>
+                <h1>LLEGÓ EL TEAM MANAGER <span>DEFINITIVO</span></h1>
             </div>
         </div>
     </header>
@@ -75,29 +91,27 @@
     <main class="queEsGrid">
         <!-- QUÉ ES -->
         <hr class=".hrr">
-        <section id="queEs" class="justificarBE queEs ancla aling-item-center">
+        <section id="queEs" class="justificarBE queEs jumptarget aling-item-center">
             <div data-aos="fade-right">
 
                 <div>
                     <h2><span>¿</span>Qué es <span>Colosseum?</span></h2>
                     <hr class=".hrr">
-                    <p>Quando ambulabat agendis admonere te qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis
-                        actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis
-                        actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo.
-                    <p>Quando ambulabat agendis admonere te qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis
-                        actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis
-                        actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo</p>
+                    <p>Colloseum es una app mobile cuyo objetivo es que
+                        puedas encontrar un torneo de la disciplina que vos quieras. ¡Si! la que vos quieras:
+                        <span>fútbol, basquet, voley, tejo, ping-pong...</span> pero no termina ahí: Con Colloseum
+                        vas a tener la posibilidad de agregar la disciplina que vos quieras con tus reglas, así que...
+                        bienvenido gamer!! ¿Querés demostras tus skills? Probate en los torneos de <span> CS:GO, LOL,
+                            Dota, Valorant, Rocket league
+                            Age of Empires</span> y muchos pero muchos más.
                     </p>
+                    <p>Lo que diferencia a Colloseum de cualquier tournamnet manager de la web, es que 
+                        en Colloseum vas a tener la posibilidad de crear tu perfil definiendo tus propias Skills:</p>
+                        <p><span>¿Jugas al fútbol?</span> Definí tu regate, velocidad, defensa, pase. <span>¿Jugas al CS:GO?</span> Numerizá tu aim, 
+                            estrategia, rotación.
+                        </p> 
+                        <p>¿Tu disciplina no aparece en la lista? No hay problema! <span>Creala</span>, defini los parámetros de la disciplina y organizá torneos!</p>
+
                 </div>
 
             </div>
@@ -107,7 +121,7 @@
 
         <!-- Cómo funciona -->
         <hr class=".hrr">
-        <section id="comoFunciona" class="ancla">
+        <section id="comoFunciona" class="jumptarget">
             <h2 data-aos="fade-up" class="textoCentrado container"><span>¿</span>Cómo funciona <span>Colosseum?</span>
             </h2>
 
@@ -115,32 +129,22 @@
             <div class="row">
                 <div data-aos="fade-down" class="requisito col-lg-4 col-md-12">
                     <h4>Registrás tu <span>perfil</span></h4>
-                    <p>Quando ambulabat agendis admonere te qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo</p>
+                    <p>Vas a rellenar unos datos personales como de nombre, nick y datos de contacto 
+                        (<span>a lo mejor te fichan de otro equipo ;-)</span> ) Podrás definir tus disciplinas 
+                        favoritas, establecer tus habilidades en cada disciplina y más</p>
                 </div>
 
                 <div data-aos="fade-down" class="requisito col-lg-4 col-md-12">
                     <h4>Encontrás tu <span>equipo</span></h4>
-                    <p>Quando ambulabat agendis admonere te qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo</p>
+                    <p>¿<span>Tu team ya está registrado en un torneo</span>? Búscalo rápidamente y comenzá a 
+                        participar. ¿<span>Buscando desafíos</span>? Podes habilitar la opción de "Busco Team" para que 
+                    otros equipos te fichen. ¿<span>Lobo solitario</span>? Demostrá quién es el mejor en los torneos individuales</p>
                 </div>
 
                 <div data-aos="fade-down" class="requisito col-lg-4 col-md-12">
                     <h4>Accedés a los <span>torneos</span></h4>
-                    <p>Quando ambulabat agendis admonere te qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo. Quando ambulabat agendis admonere te
-                        qualis actio.
-                        Si ad corpus, quae plerumque Imaginare tecum in balineo</p>
+                    <p>Junto con tu team vas a poder <span>crear y administrar</span> nuevos torneos
+                    o unirte a los ya existentes, con fixture y contacto directo con los líderes de otros equipos</p>
                 </div>
             </div>
 
@@ -153,10 +157,11 @@
 
     </section>
 
-    <main class="requisitosGrid">
+    <main class="requisitosGrid ">
         <!-- Requisitos -->
         <hr class=".hrr">
-        <section id="requisitos" class="requisitos ancla justificarBE aling-item-center">
+        <p></p>
+        <section id="requisitos" class="requisitos jumptarget justificarBE aling-item-center">
             <img data-aos="fade-right" src="img/requisitos.png" class="imgResponsive" alt="requisitos">
 
             <div data-aos="fade-left">
@@ -164,18 +169,17 @@
                 <hr class=".hrr">
                 <h4>Requisitos:</h4>
                 <ol>
-                    <li>Paso 1</li>
-                    <li>Paso 2</li>
-                    <li>Paso 3</li>
-                    <li>Paso 4</li>
-                    <li>Paso 5</li>
+                    <li>Teléfono con Android, IOs o Navegador</li>
+                    <li>Correo o teléfono para el registro</li>
+                    <li>Cuentas externas para e-Sports</li>
+                    
                 </ol>
             </div>
         </section>
 
         <!-- Tutoriales -->
         <hr class=".hrr">
-        <section id="tutoriales" class="tutoriales ancla">
+        <section id="tutoriales" class="tutoriales jumptarget">
 
             <h2 data-aos="fade-down" class="textoCentrado"><span>Tutoriales</span></h2>
 
@@ -219,6 +223,15 @@
 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
